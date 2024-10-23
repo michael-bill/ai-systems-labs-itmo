@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character_in_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character_in_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware_installed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware_installed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#enemy_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#enemy_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#friend_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#friend_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#has_weapon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#has_weapon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#member_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#member_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#works_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#works_for">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#afterlife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#afterlife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#aldecaldos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#aldecaldos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#alt_cunningham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#alt_cunningham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:works_for rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netwatch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#animals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#animals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#badlands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#badlands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#berserk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#berserk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#biotechnica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#biotechnica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#city_center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#city_center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#dexter_deshawn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#dexter_deshawn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pistol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#evelyn_parker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#evelyn_parker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#gorilla_arms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#gorilla_arms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#heywood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#heywood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#jackie_welles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#jackie_welles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#shotgun"/>
+        <untitled-ontology-3:member_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#valentinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#johnny_silverhand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#johnny_silverhand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city"/>
+        <untitled-ontology-3:cyberware_installed rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberarm"/>
+        <untitled-ontology-3:enemy_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#power_rifle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#judy_alvarez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#judy_alvarez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#watson"/>
+        <untitled-ontology-3:cyberware_installed rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#neural_link"/>
+        <untitled-ontology-3:member_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#moxes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kang_tao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kang_tao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#katana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#katana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerensikov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerensikov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerry_eurodyne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerry_eurodyne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#westbrook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#lizzy_wizzy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#lizzy_wizzy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#mantis_blades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#mantis_blades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#meredith_stout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#meredith_stout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city"/>
+        <untitled-ontology-3:works_for rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#militech"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#militech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#militech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#misty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#misty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#monowire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#monowire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#moxes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#moxes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#mr_hands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#mr_hands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netrunners -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netrunners">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netwatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netwatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#neural_link -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#neural_link">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#ozob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#ozob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#monowire"/>
+        <untitled-ontology-3:member_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#animals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pacifica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pacifica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#panam_palmer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#panam_palmer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#badlands"/>
+        <untitled-ontology-3:cyberware_installed rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerensikov"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#tech_sniper"/>
+        <untitled-ontology-3:member_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#aldecaldos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#power_rifle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#power_rifle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#rogue_amendiares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#rogue_amendiares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#afterlife"/>
+        <untitled-ontology-3:enemy_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#pistol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#sandevistan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#sandevistan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#cyberware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#santo_domingo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#santo_domingo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#shotgun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#shotgun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smart_pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smart_pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smasher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smasher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:works_for rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#t_bug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#t_bug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:member_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#netrunners"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#takemura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#takemura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city"/>
+        <untitled-ontology-3:works_for rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#tech_sniper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#tech_sniper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#trauma_team -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#trauma_team">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#tyger_claws -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#tyger_claws">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#v -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#v">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#night_city"/>
+        <untitled-ontology-3:cyberware_installed rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#mantis_blades"/>
+        <untitled-ontology-3:cyberware_installed rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#sandevistan"/>
+        <untitled-ontology-3:enemy_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#arasaka"/>
+        <untitled-ontology-3:enemy_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smasher"/>
+        <untitled-ontology-3:friend_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#jackie_welles"/>
+        <untitled-ontology-3:friend_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#judy_alvarez"/>
+        <untitled-ontology-3:friend_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#kerry_eurodyne"/>
+        <untitled-ontology-3:friend_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#panam_palmer"/>
+        <untitled-ontology-3:friend_of rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#viktor_vector"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#katana"/>
+        <untitled-ontology-3:has_weapon rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#smart_pistol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#valentinos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#valentinos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#faction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#viktor_vector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#viktor_vector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#watson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#wakako_okada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#wakako_okada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#character"/>
+        <untitled-ontology-3:character_in_location rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#westbrook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#watson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#watson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#westbrook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#westbrook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/michael-bill/ontologies/2024/9/untitled-ontology-3#location"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

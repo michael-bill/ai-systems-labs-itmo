@@ -1,0 +1,42 @@
+Найти всех персонажей в игре
+character(Character).
+
+Проверить, находится ли Джуди Альварес в Ватсоне.
+character_in_location(judy_alvarez, watson).
+
+Найти персонажей, которые находятся в Найт-Сити и являются врагами Арасаки.
+character_in_location(Character, night_city), enemy_of(Character, arasaka).
+
+Найти персонажей, которые являются друзьями V или членами банды "Мокс" (Moxes).
+friend_of(v, Character) ; member_of(Character, moxes).
+
+Найти персонажей, которые не имеют киберимплантов.
+character(Character), \+ cyberware_installed(Character).
+
+Есть ли персонажи, которые работают на Арасака и являются врагами V?
+works_for(Character, arasaka), enemy_of(v, Character).
+
+Найти персонажей, у которых есть оружие типа "Мононить" или киберимплант "Мононить".
+has_weapon(Character, monowire) ; cyberware_installed(Character, monowire).
+
+
+
+Персонажи, которые находятся в Night City:
+character and character_in_location value night_city
+
+Друзья персонажа V:
+character and friend_of value v   
+
+Враги корпорации Arasaka:
+character and enemy_of value arasaka
+   
+
+Персонажи, которые являются друзьями Джуди Альварес и имеют киберимплант:
+character and friend_of value judy_alvarez and (cyberware_installed some cyberware)
+   
+
+Персонажи с оружием и членом какой-либо фракции:
+character and (has_weapon some weapon) and (member_of some faction)
+
+Вывести все локации, где находится хотя бы один персонаж:
+location and (inverse character_in_location some character)
